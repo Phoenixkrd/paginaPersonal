@@ -1,0 +1,88 @@
+* { 
+   
+    body {
+
+        background-color: #333;
+        
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        text-align: center; 
+    }
+    
+    header {
+        background-color: #333;
+        color: #ffffff;
+        padding: 20px;
+    }
+    
+    main {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: right; 
+    }
+    
+    .gallery, .text {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: left; 
+        margin: auto; 
+        max-width: 600px; 
+    }
+    
+    .gallery h2, .text h2 {
+        margin-top: 0;
+        color: #000000;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    body {
+        background-color: black; /* Establece el color de fondo en negro */
+        color: white; /* Cambia el color del texto para que sea legible sobre el fondo negro */
+        font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    }
+    .gallery {
+        margin-bottom: 30px; /* Agrega espacio entre las galerías */
+    }
+    .gallery h2 {
+        text-align: center; /* Centra los títulos de las galerías */
+    }
+    .gallery img {
+        width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Agrega espacio entre las imágenes */
+    }
+    .gallery .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery .row > div {
+        flex: 0 0 calc(50% - 10px);
+        margin-right: 20px;
+    }
+    .gallery .row > div:last-child {
+        margin-right: 0;
+    }
+
+}
